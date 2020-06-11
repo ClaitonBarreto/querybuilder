@@ -33,13 +33,6 @@ class QueryBuilder
     public function listAll()
     {
 
-        /**
-         * $qm
-         * ->table('users')
-         * ->fields('*')
-         * ->listAll()
-         */
-
         $table = isset($this->methods['table']) ? $this->methods['table'] : '<table>';
 
         $_fields = isset($this->methods['fields']) ? $this->methods['fields'] : '<fields>';
@@ -57,14 +50,6 @@ class QueryBuilder
 
     public function list($_values = [])
     {
-
-        /**
-         * $qm
-         * ->table('users')
-         * ->fields('*')
-         * ->where('username')
-         * ->list('josh')
-         */
 
         $table = isset($this->methods['table']) ? $this->methods['table'] : '<table>';
 
@@ -98,14 +83,6 @@ class QueryBuilder
 
     public function update($values = [])
     {
-
-        /**
-         * $qm
-         * ->table('users')
-         * ->id(2)
-         * ->fields(['username', 'userlogin'])
-         * ->update('jhon', 'jjwalk');
-         */
     
          $table = isset($this->methods['table']) ? $this->methods['table'] : '<table>';
          $_fields = isset($this->methods['fields']) ? $this->methods['fields'] : '<fields>';
@@ -132,14 +109,6 @@ class QueryBuilder
     public function insert()
     {
 
-        /**
-         * $qm
-         * ->table('users')
-         * ->fields(array $fields)
-         * ->values(array $values);
-         * ->insert()
-         */
-
         $table = isset($this->methods['table']) ? $this->methods['table'] : '<table>';
         $_fields = isset($this->methods['fields']) ? $this->methods['fields'] : '<fields>';
         $__values = isset($this->methods['values']) ? $this->methods['values'] : '<values>';
@@ -158,13 +127,6 @@ class QueryBuilder
 
     public function delete()
     {
-
-        /**
-         * $qm
-         * ->table('users')
-         * ->id(2)
-         * ->delete()
-         */
 
         $table = isset($this->methods['table']) ? $this->methods['table'] : '<table>';
 
