@@ -1,9 +1,5 @@
 <?php
 
-namespace Cbcode\DB;
-
-use Cbcode\DB\Sql;
-
 class QueryBuilder
 {
     /**
